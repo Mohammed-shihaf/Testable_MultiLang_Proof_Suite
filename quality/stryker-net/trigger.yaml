@@ -1,0 +1,11 @@
+tool: stryker-net
+language: csharp
+language_version: ".NET 6-8"
+technique: "Mutation Testing"
+target_files: [../../Program.cs]
+run:
+  command: "dotnet stryker"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against Program.cs"

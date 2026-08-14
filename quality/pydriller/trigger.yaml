@@ -1,0 +1,11 @@
+tool: pydriller
+language: csharp
+language_version: ".NET 6-8"
+technique: "Git History Mining"
+target_files: [../../Program.cs]
+run:
+  command: "python -m pydriller ."
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against Program.cs"

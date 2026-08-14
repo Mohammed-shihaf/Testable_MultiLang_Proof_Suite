@@ -1,0 +1,11 @@
+tool: semgrep
+language: csharp
+language_version: ".NET 6-8"
+technique: "Static Security Analysis"
+target_files: [../../Program.cs]
+run:
+  command: "semgrep scan"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against Program.cs"

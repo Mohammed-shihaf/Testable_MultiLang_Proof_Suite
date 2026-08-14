@@ -1,0 +1,11 @@
+tool: jscpd
+language: csharp
+language_version: ".NET 6-8"
+technique: "Copy-Paste Detector"
+target_files: [../../Program.cs]
+run:
+  command: "npx jscpd Program.cs"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against Program.cs"

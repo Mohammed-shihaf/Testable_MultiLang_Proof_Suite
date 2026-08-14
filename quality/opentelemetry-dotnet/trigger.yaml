@@ -1,0 +1,11 @@
+tool: opentelemetry-dotnet
+language: csharp
+language_version: ".NET 6-8"
+technique: "OTLP Observability"
+target_files: [../../Program.cs]
+run:
+  command: "dotnet run"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against Program.cs"

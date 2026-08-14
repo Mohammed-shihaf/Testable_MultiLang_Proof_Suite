@@ -1,0 +1,11 @@
+tool: coverlet
+language: csharp
+language_version: ".NET 6-8"
+technique: "Code Coverage Collector"
+target_files: [../../Program.cs]
+run:
+  command: "dotnet test /p:CollectCoverage=true"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against Program.cs"
