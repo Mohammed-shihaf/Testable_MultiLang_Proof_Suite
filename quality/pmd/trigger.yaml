@@ -1,0 +1,11 @@
+tool: pmd
+language: java
+language_version: "8-21"
+technique: "Static Source Analysis"
+target_files: [../../src/main/java/com/example/App.java]
+run:
+  command: "mvn pmd:pmd"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against App.java"

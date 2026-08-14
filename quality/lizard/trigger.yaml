@@ -1,0 +1,11 @@
+tool: lizard
+language: java
+language_version: "8-21"
+technique: "Code Complexity Analysis"
+target_files: [../../src/main/java/com/example/App.java]
+run:
+  command: "lizard src/main/java"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against App.java"

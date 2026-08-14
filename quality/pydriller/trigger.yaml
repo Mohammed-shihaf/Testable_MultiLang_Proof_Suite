@@ -1,0 +1,11 @@
+tool: pydriller
+language: java
+language_version: "8-21"
+technique: "Git History Mining"
+target_files: [../../src/main/java/com/example/App.java]
+run:
+  command: "python -m pydriller src/main/java"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against App.java"

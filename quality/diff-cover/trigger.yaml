@@ -1,0 +1,11 @@
+tool: diff-cover
+language: java
+language_version: "8-21"
+technique: "Incremental Coverage Analysis"
+target_files: [../../src/main/java/com/example/App.java]
+run:
+  command: "diff-cover jacoco.xml"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against App.java"
