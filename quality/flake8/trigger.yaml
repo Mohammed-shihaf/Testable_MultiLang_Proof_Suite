@@ -1,0 +1,11 @@
+tool: flake8
+language: python
+language_version: "3.8-3.13"
+technique: "PEP8 Linting"
+target_files: [../../src/sample_pkg/utils.py]
+run:
+  command: "flake8 src/sample_pkg"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/sample_pkg/utils.py"

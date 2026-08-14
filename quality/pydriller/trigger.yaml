@@ -1,0 +1,11 @@
+tool: pydriller
+language: python
+language_version: "3.6-3.9"
+technique: "Git Repository Mining"
+target_files: [../../src/sample_pkg/utils.py]
+run:
+  command: "python -m pydriller src/"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/sample_pkg/utils.py"

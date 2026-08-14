@@ -1,0 +1,11 @@
+tool: jscpd
+language: python
+language_version: "3.8-3.13"
+technique: "Copy-Paste Detector"
+target_files: [../../src/sample_pkg/utils.py]
+run:
+  command: "npx jscpd src/"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/sample_pkg/utils.py"

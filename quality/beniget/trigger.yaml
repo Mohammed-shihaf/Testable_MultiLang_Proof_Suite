@@ -1,0 +1,11 @@
+tool: beniget
+language: python
+language_version: "3.6-3.14"
+technique: "Use-Def / Def-Use Dataflow Analysis"
+target_files: [../../src/sample_pkg/utils.py]
+run:
+  command: "beniget src/sample_pkg/utils.py"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/sample_pkg/utils.py"

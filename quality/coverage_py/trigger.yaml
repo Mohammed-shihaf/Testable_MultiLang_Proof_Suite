@@ -1,0 +1,11 @@
+tool: coverage.py
+language: python
+language_version: "3.10-3.13"
+technique: "Statement Coverage"
+target_files: [../../src/sample_pkg/utils.py]
+run:
+  command: "coverage run -m pytest"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/sample_pkg/utils.py"

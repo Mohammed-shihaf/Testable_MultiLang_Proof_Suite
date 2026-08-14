@@ -1,0 +1,11 @@
+tool: semgrep
+language: python
+language_version: "3.8-3.13"
+technique: "Static Security Analysis"
+target_files: [../../src/sample_pkg/utils.py]
+run:
+  command: "semgrep scan --config p/security-audit"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/sample_pkg/utils.py"
