@@ -7,5 +7,10 @@ namespace SampleApp.Tests {
         public void TestAdd() {
             Assert.Equal(5, Program.Add(2, 3));
         }
+
+        [Fact]
+        public void TestSubtract() {
+            Assert.Equal(1, Program.Subtract(3, 2));
+        }
     }
 }

@@ -1,0 +1,6 @@
+{
+  "stryker-config": {
+    "test-projects": ["../../tests/SampleApp.Tests/SampleApp.Tests.csproj"],
+    "reporters": ["progress", "cleartext"]
+  }
+}
